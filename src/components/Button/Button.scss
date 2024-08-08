@@ -1,0 +1,45 @@
+.custom-button {
+    height: 2.3rem;
+    border-radius: 0.3rem;
+    background-color: #0066B9;
+    color: white;
+    border: none;
+    text-align: center;
+    align-items: center;
+    border: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    //   @include tablet {
+    //     padding: 0 1rem;
+    //     padding: 0 1rem;
+    //     font-size: 0.7rem;
+    //     width: 100%;
+    //     margin-top: 0;
+    //   }
+
+    //   @include desktop {
+    //     padding: 0 2rem;
+    //     font-size: 0.7rem;
+    //     padding: 0.56rem 0.9rem;
+    //   }
+
+    &:hover {
+        background-color: #014882;
+    }
+
+    &__text {
+        flex-grow: 1;
+        padding: 0;
+        top: auto;
+        color: white;
+        // @include font_labels_mobile;
+
+        // @include tablet {
+        //     @include font_labels_tablet_desktop;
+        // }
+    }
+}
