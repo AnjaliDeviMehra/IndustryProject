@@ -13,7 +13,7 @@ export const AITools = () => {
       image: card1,
       info: "Understand the potential of AI and gain the necessary insights to make informed decisions about AI adoption and implementation in your organization.",
       button: "Get Started",
-      buttonLink: "/"
+      buttonLink: "/demo"
     },
     {
       title: "Personalized Customer Recommentations",
