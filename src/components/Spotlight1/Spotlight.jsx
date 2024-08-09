@@ -1,4 +1,5 @@
 import "./Spotlight.scss";
+import { Link } from "react-router-dom";
 
 const Spotlight = () => {
   return (
@@ -58,13 +59,9 @@ const Spotlight = () => {
               </p>
             </div>
           </div>
-          <a
-            href="https://learn.microsoft.com/en-us/plans/5m3sokzk2e383"
-            className="spotlight__link"
-            target="_blank"
-          >
+          <Link to="http://localhost:5173/industry" className="spotlight__link">
             Get started
-          </a>
+          </Link>
         </div>
 
         <div className="spotlight__card card">
@@ -75,7 +72,7 @@ const Spotlight = () => {
                 alt=""
                 className="spotlight__icon"
               />
-               <div className="spotlight__subtitle">
+              <div className="spotlight__subtitle">
                 <h3>Copilot learning hub</h3>
                 <span className="spotlight__subtitle--2">
                   Learn to use Copilot
