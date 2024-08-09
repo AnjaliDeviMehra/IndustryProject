@@ -4,12 +4,15 @@ import { AITools } from "./components/AITools/AITools";
 import { Demo } from "./components/Demo/Demo";
 import { IndustryList } from "./components/IndustryList/IndustryList";
 import "./App.scss";
+import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/industry" element={<IndustryList />} />
@@ -17,6 +20,7 @@ function App() {
           <Route path="/demo" element={<Demo />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }

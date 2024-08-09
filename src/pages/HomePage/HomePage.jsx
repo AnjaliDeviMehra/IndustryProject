@@ -2,12 +2,10 @@ import React from "react";
 import "./Homepage.scss";
 import Spotlight from "../../components/Spotlight1/Spotlight";
 import HomepageNav from "../../components/HomepageNav/HomepageNav";
-import Nav from "../../components/Nav/Nav";
 
 export const HomePage = () => {
   return (
     <>
-    <Nav />
     <div className="hero">
       <div>
         <span className="hero__subtitle">MICROSOFT LEARN</span>
