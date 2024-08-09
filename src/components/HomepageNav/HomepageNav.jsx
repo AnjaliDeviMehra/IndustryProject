@@ -3,7 +3,7 @@ import "./HomepageNav.scss";
 const HomepageNav = () => {
   return (
     <div className="navigation-section">
-      <a href="#ai-by-industry" className="navigation-section__item">
+      <a href="/industry" className="navigation-section__item">
         <img
           src="../../../src/assets/images/icon.png"
           alt=""

@@ -80,4 +80,10 @@ body {
     height: 7rem;
     width: 8rem;
   }
+
+  a {
+    :hover {
+      cursor: pointer;
+    }
+  }
 }
