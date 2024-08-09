@@ -1,0 +1,50 @@
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f3f3f3; 
+  font-size: 0.875rem;
+  color: #333; 
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    & span {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & span {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+
+      & a {
+        text-decoration: none;
+        color: inherit; 
+        font-size: 12px;
+      }
+
+      & a:hover {
+        text-decoration: underline; 
+      }
+    }
+  }
+
+  &__privacy-choices {
+    background-color: #e1e1e1; 
+    padding: 0 5px;
+    border-radius: 12px; 
+  }
+}

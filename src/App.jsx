@@ -3,18 +3,26 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { AITools } from "./components/AITools/AITools";
 import { Demo } from "./components/Demo/Demo";
 import { IndustryList } from "./components/IndustryList/IndustryList";
+import CommentSummarizerPage from "./pages/CommentSummarizer/CommentSummarizerPage";
+import "./App.scss";
+import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
+
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/industry" element={<IndustryList />} />
           <Route path="/tools" element={<AITools />} />
-          <Route path="/demo" element={<Demo />} />
+          <Route path="/demo" element={<CommentSummarizerPage />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }
