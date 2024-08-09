@@ -2,28 +2,63 @@ import React, { useState } from "react";
 import "./Demo.scss";
 
 const initialComments = [
-  "I highly recommend this store. Their customer service is second to none. The product quality consistently exceeds my expectations.",
-  "The staff was attentive and polite.",
-  "The store was clean and well-organized.",
-  "The staff was rude during my visit, and the checkout process was slow.",
-  "The prices seem high for everyday items.",
-  "The store location is convenient, but I wish they had a wider variety of products.",
-  "The layout could be more intuitive.",
+  {
+    text: "The fabric is so soft and comfortable. It feels like it's made with high-quality materials.",
+    user: "Jane Doe",
+    date: "2024-08-01",
+  },
+  {
+    text: "I love the color selection. There are so many vibrant options!",
+    user: "John Smith",
+    date: "2024-08-02",
+  },
+  {
+    text: "The sizing is a bit off. I had to exchange for a different size.",
+    user: "Alice Brown",
+    date: "2024-08-03",
+  },
+  {
+    text: "The stitching on the seams is very well done, but the buttons feel a bit loose.",
+    user: "David Wilson",
+    date: "2024-08-04",
+  },
+  // {
+  //   text: "The design is trendy and stylish. I've received so many compliments!",
+  //   user: "Megan Taylor",
+  //   date: "2024-08-05",
+  // },
+  // {
+  //   text: "I wish the material was more durable. It started to show wear after a few washes.",
+  //   user: "Chris Johnson",
+  //   date: "2024-08-06",
+  // },
+  // {
+  //   text: "The price is reasonable for the quality, but I would love to see more discounts.",
+  //   user: "Emily Davis",
+  //   date: "2024-08-07",
+  // },
 ];
 
 const initialSummary = {
-  total:
-    "Overall, the store receives positive reviews for excellent customer service, high-quality products, and a clean, well-organized environment. However, some customers noted staff rudeness, slow checkout, high prices, limited variety, and a non-intuitive layout.",
-  positive:
-    "Customers highly recommend this store due to excellent customer service, high-quality products, and a clean, well-organized environment.",
-  negative:
-    "Some customers expressed concerns about staff rudeness, slow checkout, high prices, limited product variety, and a non-intuitive store layout.",
+  summary: (
+    <p>
+      Customers appreciate the <span className="keyword">soft</span> and{" "}
+      <span className="keyword">comfortable fabric</span>,{" "}
+      <span className="keyword">vibrant color options</span>, and{" "}
+      <span className="keyword">trendy design</span> of the clothing. The{" "}
+      <span className="keyword">stitching</span> is generally praised, though
+      there are some concerns about the{" "}
+      <span className="keyword">durability of materials</span> and the{" "}
+      <span className="keyword">accuracy of sizing</span>. Overall, the product
+      is seen as <span className="keyword">stylish</span> and{" "}
+      <span className="keyword">reasonably priced</span>.
+    </p>
+  ),
 };
 
 export const Demo = () => {
   const [comments, setComments] = useState(initialComments);
   const [summary, setSummary] = useState(null);
-  const [activeSummary, setActiveSummary] = useState("total");
 
   const handleSummarize = () => {
     setSummary(initialSummary);
@@ -31,43 +66,37 @@ export const Demo = () => {
 
   return (
     <div className="container">
-      <div className="comments">
-        <h2>Comments</h2>
-        <div>
-          {comments.map((comment, index) => (
-            <p key={index}>{comment}</p>
-          ))}
-        </div>
-        <button className="button__Summarize" onClick={handleSummarize}>
-          Summarize
-        </button>
-      </div>
-      <div className="summary">
-        <h2>Summary</h2>
-        {summary ? (
+      <h2 className="comments__header">TRY IT OUT YOURSELF</h2>
+      <div className="content-row">
+        <div className="comments">
           <div>
-            <div className="summary__types">
-              <button onClick={() => setActiveSummary("total")}>
-                Total Summary
-              </button>
-              <button onClick={() => setActiveSummary("positive")}>
-                Positive Summary
-              </button>
-              <button onClick={() => setActiveSummary("negative")}>
-                Negative Summary
-              </button>
-            </div>
-            <div style={{ marginTop: "0.625rem" }}>
-              <p>{summary[activeSummary]}</p>
-            </div>
+            {comments.map((comment, index) => (
+              <div key={index} className="comment">
+                <div className="comment__body">
+                  <h4 className="comment__user">{comment.user}</h4>
+                  <p className="comment__text">{comment.text}</p>
+                  <p className="comment__date">{comment.date}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        ) : (
-          <p>Click "Summarize" to see the summary of comments.</p>
-        )}
-      </div>
+        </div>
 
-      <div className="button__AI">
-        <button>How to Build with AI</button>
+        <div className="summary">
+          <h2 className="summary__header">Feedback Summary</h2>
+          {summary ? (
+            <div>{summary.summary}</div>
+          ) : (
+            <p>Click "SUMMARIZE" to see the summary of customer feedback.</p>
+          )}
+          <div className="button__container">
+            {!summary && (
+              <button className="button__Summarize" onClick={handleSummarize}>
+                SUMMARIZE
+              </button>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
