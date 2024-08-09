@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .hero {
   background-image: url("../../../src/assets/images/header-background.png");
   background-size: cover;
@@ -45,6 +50,10 @@ body {
     text-align: center;
   }
 
+  &__description {
+    display: flex;
+  }
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -63,5 +72,15 @@ body {
     flex-direction: column;
     background-color: white;
     width: 32%;
+  }
+
+  &__link {
+    display: block;
+    color: #1471b9;
+    width: 100%;
+    &:hover {
+      color: #0065b3;
+      text-decoration: underline;
+    }
   }
 }
