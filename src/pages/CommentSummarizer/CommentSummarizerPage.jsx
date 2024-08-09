@@ -4,7 +4,7 @@ import Demo from "../../components/Demo/Demo";
 
 const CommentSummarizerPage = () => {
   return (
-    <>
+    <div className="comment-container">
       <div className="comment-hero">
         <div className="comment-hero__info">
           <h4 className="comment-hero__heading">AI TOOLS FOR YOUR BUSINESS</h4>
@@ -37,7 +37,7 @@ const CommentSummarizerPage = () => {
       <Demo />
       {/* Real storefront examples */}
       {/* Button that links to a resource how to build this using AI */}
-    </>
+    </div>
   );
 };
 
