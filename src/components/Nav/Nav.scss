@@ -2,11 +2,14 @@
 @use "../../styles/partials/global" as *;
   .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     background-color: #ffffff;
+    height: 60px;
+    border-bottom: 2px solid $graphite;
     
     &__left {
       display: flex;
@@ -18,30 +21,42 @@
       }
       
       & > .navbar__title {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         border-left: 2px solid $black;
         padding: 0 10px;
       }
     }
-  
+    
     &__links {
       display: flex;
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
 
-      
-      & > .navbar__item {
-        margin: 0 15px;
+      & > .navbar__link {
+        margin: 0 14px;
         display: flex;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-end;
         cursor: pointer;
 
         & > .arrow-down {
           width: 18px; 
           height: 18px; 
           background: url('../../assets/images/arrow_drop_down-24px.svg') no-repeat center;
-
+        }
+      }
+    }
+    &__link {
+      display: flex;
+      gap:1rem;
+      &--text {
+        font-size: 14px;
+        font-weight: 300;
+        color: $black;
+        &:hover {
+          text-decoration: underline; 
         }
       }
     }

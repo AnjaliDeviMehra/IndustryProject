@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div className="main__wrapper">
         <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -21,8 +22,9 @@ function App() {
           <Route path="/tools" element={<AITools />} />
           <Route path="/demo" element={<CommentSummarizerPage />} />
         </Routes>
+      </div>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </>
   );
 }
