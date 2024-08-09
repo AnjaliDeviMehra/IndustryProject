@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.hero {
+.hero-section {
   background-color: #043987;
   color: white;
 
@@ -13,8 +13,7 @@ body {
   &__heading {
     font-size: 3rem;
   }
-  &__description {
-  }
+
   &__date {
     margin-top: 3rem;
   }
@@ -57,7 +56,7 @@ body {
   justify-content: space-evenly;
 }
 
-.card {
+.list-card {
   height: 12rem;
   width: 12rem;
   margin: 3rem;

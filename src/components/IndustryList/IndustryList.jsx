@@ -44,10 +44,12 @@ export const IndustryList = () => {
   ];
   return (
     <>
-      <section className="hero">
-        <div className="hero__section1">
-          <h1 className="hero__heading">Explore AI Tools By Industry</h1>
-          <p className="hero__description">
+      <section className="hero-section">
+        <div className="hero-section__section1">
+          <h1 className="hero-section__heading">
+            Explore AI Tools By Industry
+          </h1>
+          <p className="hero-section__description">
             Discover how Microsoft AI tools can transform your industry! Our app
             provides tailored insights into industry-specific AI solutions,
             showcasing how Microsoft's powerful technologies can enhance
@@ -56,16 +58,16 @@ export const IndustryList = () => {
             overviews and user-friendly guides, unlock the potential of AI and
             drive success in your field.
           </p>
-          <p className="hero__date">Edited on 8/8/2024</p>
+          <p className="hero-section__date">Edited on 8/8/2024</p>
 
-          <p className="hero__signature">
+          <p className="hero-section__signature">
             Created By
-            <img src={Logo} alt="logo" className="hero__logo" />
+            <img src={Logo} alt="logo" className="hero-section__logo" />
             Micosoft
           </p>
         </div>
-        <div className="hero__section2">
-          <img src={image} alt="graphics" className="hero__image" />
+        <div className="hero-section__section2">
+          <img src={image} alt="graphics" className="hero-section__image" />
         </div>
       </section>
       <section className="info-section">
@@ -84,9 +86,9 @@ export const IndustryList = () => {
       </section>
       <ul className="list">
         {data.map((industry) => (
-          <li className="card">
-            <img src={industry.img} alt="" className="card__image" />
-            <h2 className="card__name">{industry.name}</h2>
+          <li className="list-card">
+            <img src={industry.img} alt="" className="list-card__image" />
+            <h2 className="list-card__name">{industry.name}</h2>
           </li>
         ))}
       </ul>
