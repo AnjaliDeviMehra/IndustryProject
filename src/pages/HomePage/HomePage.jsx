@@ -6,7 +6,7 @@ import HomepageNav from "../../components/HomepageNav/HomepageNav";
 export const HomePage = () => {
   return (
     <>
-    <div className="hero">
+    <div className="home__hero hero">
       <div>
         <span className="hero__subtitle">MICROSOFT LEARN</span>
         <h1 className="hero__title">AI learning hub</h1>
