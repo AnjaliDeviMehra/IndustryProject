@@ -51,10 +51,10 @@ const InsightsDemo = () => {
   };
 
   return (
-    <div className="insights-demo">
-      <div>
-        <div>
-          <h2>Retail Sales Data</h2>
+    <div className="container">
+      <div className="content-items">
+        <div className="content">
+          <h2 className="insight-title">Retail Sales Data</h2>
           <p>Total Sales: $120,000</p>
 
           <h3>Top Categories:</h3>
@@ -71,10 +71,12 @@ const InsightsDemo = () => {
             <li>Adults (35-54): $45,000</li>
           </ul>
 
-          <button onClick={handleSummarize}>Generate AI Recommendations</button>
+          <button className="button__Summarize" onClick={handleSummarize}>
+            Generate AI Recommendations
+          </button>
         </div>
+        {summary && <div className="insights-summary">{summary}</div>}
       </div>
-      {summary && <div className="insights-summary">{summary}</div>}
     </div>
   );
 };

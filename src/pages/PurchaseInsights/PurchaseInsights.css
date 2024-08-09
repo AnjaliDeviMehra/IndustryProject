@@ -9,8 +9,7 @@
   width: 50%;
   align-self: center; /* Center the button between the cards */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  &:hover {
-    background-color: #002244; /* Darker shade for hover */
-  }
 }
+.button__Summarize:hover {
+  background-color: #002244; /* Darker shade for hover */
+}/*# sourceMappingURL=PurchaseInsights.css.map */
