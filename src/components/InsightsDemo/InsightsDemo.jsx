@@ -1,5 +1,6 @@
 import "./InsightsDemo.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const initialSummary = (
   <div>
@@ -77,6 +78,11 @@ const InsightsDemo = () => {
         </div>
         {summary && <div className="insights-summary">{summary}</div>}
       </div>
+      <Link to="/consultations">
+        <button className="button__AI">
+          Book a consultation with our AI experts.
+        </button>
+      </Link>
     </div>
   );
 };
