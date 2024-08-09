@@ -1,8 +1,8 @@
 import React from "react";
-import "./CommentSummarizer.scss";
+import "./CommentSummarizerPage.scss";
 import Demo from "../../components/Demo/Demo";
 
-export const CommentSummarizerPage = () => {
+const CommentSummarizerPage = () => {
   return (
     <>
       <h2>Customer Feedback Summarizer</h2>
@@ -12,3 +12,5 @@ export const CommentSummarizerPage = () => {
     </>
   );
 };
+
+export default CommentSummarizerPage;
