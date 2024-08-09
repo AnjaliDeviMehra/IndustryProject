@@ -1,0 +1,81 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background-color: #043987;
+  color: white;
+  display: flex;
+}
+.hero-section__heading {
+  font-size: 3rem;
+}
+.hero-section__date {
+  margin-top: 3rem;
+}
+.hero-section__logo {
+  width: 2rem;
+  height: auto;
+  padding: 0 0.2rem 0 0.5rem;
+}
+.hero-section__signature {
+  margin: 2rem 0 4rem;
+}
+.hero-section__section1 {
+  width: 50%;
+  padding: 3rem 10rem 0 3rem;
+}
+.hero-section__section2 {
+  width: 50%;
+}
+.hero-section__image {
+  width: 100%;
+  height: 100%;
+}
+
+.info-section {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.info-section__heading {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.info-section__subheading {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+.list-card {
+  height: auto;
+  width: 18rem;
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.list-card__name {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem 0.5rem 0.5rem;
+}
+.list-card__image {
+  height: 7rem;
+  width: 8rem;
+}
+.list-card a :hover {
+  cursor: pointer;
+}/*# sourceMappingURL=IndustryList.css.map */

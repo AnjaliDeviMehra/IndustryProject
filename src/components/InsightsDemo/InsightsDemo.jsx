@@ -6,7 +6,7 @@ const initialSummary = (
     <h2>AI-Generated Strategy Recommendations:</h2>
 
     <div>
-      <h3>Targeted Marketing:</h3>
+      <h3 className="insight-title">Targeted Marketing:</h3>
       <ul>
         <li>
           For Young Adults: Increase advertising spend on electronics and
@@ -20,7 +20,7 @@ const initialSummary = (
     </div>
 
     <div>
-      <h3>Product Inventory:</h3>
+      <h3 className="insight-title">Product Inventory:</h3>
       <ul>
         <li>
           Electronics: Increase stock for top-selling items based on projected
@@ -34,7 +34,7 @@ const initialSummary = (
     </div>
 
     <div>
-      <h3>How It Works:</h3>
+      <h3 className="insight-title">How It Works:</h3>
       <p>
         AI analyzes customer data to recommend marketing strategies and
         inventory adjustments.
@@ -54,10 +54,10 @@ const InsightsDemo = () => {
     <div className="container">
       <div className="content-items">
         <div className="content">
-          <h2 className="insight-title">Retail Sales Data</h2>
+          <h2>Retail Sales Data</h2>
           <p>Total Sales: $120,000</p>
 
-          <h3>Top Categories:</h3>
+          <h3 className="insight-title">Top Categories:</h3>
           <ul>
             <li>Electronics: $40,000</li>
             <li>Clothing: $35,000</li>
@@ -65,7 +65,7 @@ const InsightsDemo = () => {
             <li>Beauty Products: $15,000</li>
           </ul>
 
-          <h3>Customer Segments:</h3>
+          <h3 className="insight-title">Customer Segments:</h3>
           <ul>
             <li>Young Adults (18-34): $50,000</li>
             <li>Adults (35-54): $45,000</li>

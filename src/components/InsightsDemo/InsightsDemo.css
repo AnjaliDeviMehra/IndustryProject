@@ -52,4 +52,8 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
+}
+
+.insight-title {
+  padding-top: 1rem;
 }/*# sourceMappingURL=InsightsDemo.css.map */
