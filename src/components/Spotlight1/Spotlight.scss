@@ -1,0 +1,42 @@
+.spotlight {
+  background-image: url("../../../src/assets/images/section-bg.jpg");
+  padding: 36px 24px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    display: flex;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  &__icon {
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 32%;
+  }
+
+  &__link {
+    display: block;
+    color: #1471b9;
+    width: 100%;
+    &:hover {
+      color: #0065b3;
+      text-decoration: underline;
+    }
+  }
+}
