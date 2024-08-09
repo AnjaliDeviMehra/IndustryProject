@@ -1,0 +1,20 @@
+.navigation-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 4rem;
+  justify-content: center;
+}
+.navigation-section :hover {
+  text-decoration: underline;
+  background-color: #f9f9f9;
+}
+.navigation-section__item {
+  all: unset;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.navigation-section__icon {
+  height: 20px;
+  margin-right: 3px;
+}/*# sourceMappingURL=HomepageNav.css.map */
