@@ -16,11 +16,11 @@ export const AITools = () => {
       buttonLink: "/demo",
     },
     {
-      title: "Personalized Customer Recommentations",
+      title: "Data-Driven Business Insights",
       image: card2,
-      info: "Boost engagement with AI-powered, tailored suggestions that drive conversions and enhance satisfaction. Elevate customer interactions with personalized, impactful recommendations.",
-      button: "Read the paper",
-      buttonLink: "/",
+      info: "Unlock the power of AI to transform your business strategy with actionable, data-driven insights. Our tool analyzes customer purchase data to deliver targeted recommendations that enhance marketing effectiveness and optimize inventory management. Elevate your decision-making with intelligent suggestions that drive sales growth and improve customer satisfaction.",
+      button: "Learn more",
+      buttonLink: "/demo-insights",
     },
     {
       title: "Copilot for executives Plan",
