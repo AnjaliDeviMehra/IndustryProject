@@ -1,112 +1,116 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+
 .hero {
-    background-image: url("../../assets/hero-image.png");
-    background-size: cover;
-    background-position: center;
-    padding: 1.5rem 1.5rem;
+  background-image: url("../../assets/hero-image.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 1.5rem;
 
-    &__details {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+  &__details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
 
-    &__title {
-        color: white;
-        font-weight: 500;
-        font-size: 2.8rem;
-        text-align: start;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 1rem 0;
-        padding-bottom: 1rem;
-    }
+  &__title {
+    color: white;
+    font-weight: 500;
+    font-size: 2.8rem;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+  }
 
-    &__info {
-        color: white;
-        font-weight: 500;
-        line-height: 1.5rem;
-        font-size: 1rem;
-        text-align: start;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 0;
-        margin: 0;
-    }
+  &__info {
+    color: white;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .ai-tools {
-    width: 100%;
+  width: 100%;
 }
 
 .card__list {
-    list-style: none;
-    margin: 0;
-    padding: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row; // for tablet and dexktop
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row; // for tablet and dexktop
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1rem;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-grow: 1;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  list-style: none;
+  width: 100%;
+  max-width: fit-content;
+  border-radius: 0.375rem;
+  border: 1px solid initial;
+  box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132),
+    0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+  text-size-adjust: 100%;
+  flex: 1 1 40%; // for tablet and mobile
+
+  flex: 1; // for tablet and mobile
+
+  &__image {
     width: 100%;
-    max-width: fit-content;
-    border-radius: 0.375rem;
-    border: 1px solid initial;
-    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
-    text-size-adjust: 100%;
-    flex: 1 1 40%; // for tablet and mobile
+    height: auto;
+  }
 
-    flex: 1; // for tablet and mobile
+  &__title {
+    font-weight: 600;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
 
-    &__image {
-        width: 100%;
-        height: auto;
+  &__info {
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 0.95rem;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1rem;
+    margin: 0;
+    flex: 1;
+  }
+
+  &__button {
+    color: #0066b9;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    align-items: center;
+    border: 0;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
-
-    &__title {
-        font-weight: 600;
-        text-align: start;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 1rem 0;
-        padding: 0 1rem;
-    }
-
-    &__info {
-        font-weight: 500;
-        line-height: 1.5rem;
-        font-size: 0.95rem;
-        text-align: start;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 0 1rem;
-        margin: 0;
-        flex: 1;
-    }
-
-    &__button {
-        color: #0066B9;
-        background-color: transparent;
-        border: none;
-        text-align: center;
-        align-items: center;
-        border: 0;
-        display: flex;
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-        margin: 1rem 0;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  }
 }

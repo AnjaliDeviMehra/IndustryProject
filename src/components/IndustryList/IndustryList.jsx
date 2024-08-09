@@ -87,7 +87,9 @@ export const IndustryList = () => {
       <ul className="list">
         {data.map((industry) => (
           <li className="list-card">
-            <img src={industry.img} alt="" className="list-card__image" />
+            <a href="/tools" className="industry__nav">
+              <img src={industry.img} alt="" className="list-card__image" />
+            </a>
             <h2 className="list-card__name">{industry.name}</h2>
           </li>
         ))}
