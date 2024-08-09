@@ -5,10 +5,10 @@ import Demo from "../../components/Demo/Demo";
 const CommentSummarizerPage = () => {
   return (
     <div className="comment-container">
-      <div className="comment-hero">
+      <div className="comment-hero hero">
         <div className="comment-hero__info">
-          <h4 className="comment-hero__heading">AI TOOLS FOR YOUR BUSINESS</h4>
-          <h2>Customer Feedback Summarizer</h2>
+          <span className="comment-hero__heading hero__subtitle">AI TOOLS FOR YOUR BUSINESS</span>
+          <h1 className="hero__title">Customer Feedback Summarizer</h1>
           <p>
             A customer feedback summarizer is a tool that helps you quickly
             understand what your customers are saying. It takes all the feedback

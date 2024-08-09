@@ -1,17 +1,24 @@
+
+
 .consultation {
   display: flex;
+  padding: 2rem;
 }
 
 .consultation-hero {
+  padding: 2rem;
+  padding-top: 50px;
   background-color: darkblue;
+  // background-color: black;
   display: flex;
   width: 50%;
   flex-direction: column;
   justify-content: center;
   color: white;
   align-items: center;
-  padding: 2rem;
+  
   gap: 3rem;
+  border-radius: 20px;
 
   &__image {
     width: 80%;

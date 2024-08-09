@@ -1,12 +1,13 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global" as *;
 .footer {
-  height: 100%;
+  // height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 48px 24px;
+  padding: 48px 24px 26px;
+  // padding-bottom: 200px;
   background-color: #e8e6df; 
   font-size: 0.875rem;
   color: #333; 

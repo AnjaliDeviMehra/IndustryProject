@@ -44,9 +44,10 @@ export const IndustryList = () => {
   ];
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section hero">
         <div className="hero-section__section1">
-          <h1 className="hero-section__heading">
+          <span className="hero__subtitle">MICROSOFT LEARN</span>
+          <h1 className="hero__title">
             Explore AI Tools By Industry
           </h1>
           <p className="hero-section__description">
@@ -67,7 +68,7 @@ export const IndustryList = () => {
           </p>
         </div>
         <div className="hero-section__section2">
-          <img src={image} alt="graphics" className="hero-section__image" />
+          {/* <img src={image} alt="graphics" className="hero-section__image" /> */}
         </div>
       </section>
       <section className="info-section">

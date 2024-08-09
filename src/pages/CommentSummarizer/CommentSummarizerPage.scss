@@ -6,22 +6,23 @@ body {
 
 .comment-container {
   padding-bottom: 2rem;
+  
 }
 .comment-hero {
+  // border-radius: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-image: url("../../../src/assets/images/header-background.png");
-  background-size: cover;
-  background-position: center;
-  height: 30rem;
-  flex-wrap: nowrap;
-  background-color: #003366;
-  color: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // background-size: cover;
+  // background-position: center;
+  // height: 30rem;
+  // flex-wrap: nowrap;
+  // background-color: #003366;
+  // color: #ffffff;
+  // padding: 40px;
+  // margin: 20px 0;
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   &__heading {
     font-weight: 100;

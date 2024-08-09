@@ -72,4 +72,22 @@ textarea {
     border-bottom: 2px $border;
 }
 
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $white;
+    padding: $padding;
+    &__title {
+      padding-bottom: $padding * 2;
+      font-weight: 600;
+    }
+    &__subtitle {
+      font-size: 14px;
+      letter-spacing: 4px;
+      font-weight: 300;
+    }
+  }
+  
+
 
