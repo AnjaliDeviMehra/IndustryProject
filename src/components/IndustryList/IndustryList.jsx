@@ -45,47 +45,51 @@ export const IndustryList = () => {
   ];
   return (
     <>
-      <section className="hero-section hero">
-        <div className="hero-section__section1">
-          <span className="hero__subtitle">MICROSOFT LEARN</span>
-          <h1 className="hero__title hero__subtitle">
-            Explore AI Tools By Industry
-          </h1>
-          <p className="hero-section__description">
-            Discover how Microsoft AI tools can transform your industry! Our app
-            provides tailored insights into industry-specific AI solutions,
-            showcasing how Microsoft's powerful technologies can enhance
-            productivity and innovation. Explore practical applications, compare
-            tools, and find the best fit for your business. With detailed
-            overviews and user-friendly guides, unlock the potential of AI and
-            drive success in your field.
-          </p>
-          <p className="hero-section__date">Edited on 8/8/2024</p>
+      <div className="row hero">
+        <section className="hero-section ">
+          <div className="hero-section__section1">
+            <span className="hero__subtitle hero__subtitle">
+              MICROSOFT LEARN
+            </span>
+            <h1 className="hero__title ">Explore AI Tools By Industry</h1>
+            <p className="hero-section__description ">
+              Discover how Microsoft AI tools can transform your industry! Our
+              app provides tailored insights into industry-specific AI
+              solutions, showcasing how Microsoft's powerful technologies can
+              enhance productivity and innovation. Explore practical
+              applications, compare tools, and find the best fit for your
+              business. With detailed overviews and user-friendly guides, unlock
+              the potential of AI and drive success in your field.
+            </p>
+            <p className="hero-section__date">Edited on 8/8/2024</p>
 
-          <p className="hero-section__signature">
-            Created By
-            <img src={Logo} alt="logo" className="hero-section__logo" />
-            Micosoft
+            <p className="hero-section__signature">
+              Created By
+              <img src={Logo} alt="logo" className="hero-section__logo" />
+              Micosoft
+            </p>
+          </div>
+
+          {/* <div className="hero-section__section2">
+            {/* <img src={image} alt="graphics" className="hero-section__image" /> */}
+          {/* </div> */}
+        </section> */}
+
+        <section className="info-section comment-hero__card">
+          <h2 className="info-section__heading">Items in this collection</h2>
+          <h3 className="info-section__subheading">
+            Let's Explore our AI tools based on your needs
+          </h3>
+          <p className="info-section__description">
+            Leverage our app to streamline your operations with cutting-edge AI
+            tools from Microsoft. Gain a competitive edge by accessing
+            specialized solutions designed for your industry’s unique
+            challenges. Improve decision-making and efficiency through tailored
+            recommendations. Stay ahead with actionable insights that drive
+            growth and innovation in your business.
           </p>
-        </div>
-        <div className="hero-section__section2">
-          {/* <img src={image} alt="graphics" className="hero-section__image" /> */}
-        </div>
-      </section>
-      <section className="info-section">
-        <h2 className="info-section__heading">Items in this collection</h2>
-        <h3 className="info-section__subheading">
-          Let's Explore our AI tools based on your needs
-        </h3>
-        <p className="info-section__description">
-          Leverage our app to streamline your operations with cutting-edge AI
-          tools from Microsoft. Gain a competitive edge by accessing specialized
-          solutions designed for your industry’s unique challenges. Improve
-          decision-making and efficiency through tailored recommendations. Stay
-          ahead with actionable insights that drive growth and innovation in
-          your business.
-        </p>
-      </section>
+        </section>
+      </div>
       <ul className="list">
         {data.map((industry) => (
           <li className="list-card">
