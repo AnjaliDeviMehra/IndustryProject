@@ -21,7 +21,7 @@
 
     .comments,
     .summary {
-      background-color: #e6f2ff; /* Light blue background */
+      background-color: #e6f2ff;
       color: #003366;
       padding: 20px;
       border-radius: 8px;
@@ -67,7 +67,7 @@
       }
 
       .keyword {
-        color: #f39c12; /* Complimentary orange color */
+        color: #f39c12;
         font-weight: bold;
       }
     }
@@ -75,17 +75,17 @@
     .button__Summarize {
       background-color: #003366;
       color: #ffffff;
-      padding: 15px 30px; /* Increased size */
-      font-size: 18px; /* Larger font size */
+      padding: 1 rem 2 rem;
+      font-size: 1.125rem;
       border: none;
-      border-radius: 8px;
+      border-radius: 0.5rem;
       cursor: pointer;
       width: 50%;
-      align-self: center; /* Center the button between the cards */
+      align-self: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
       &:hover {
-        background-color: #002244; /* Darker shade for hover */
+        background-color: #002244;
       }
     }
   }
@@ -95,4 +95,47 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
+}
+
+.summary {
+  &__types {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 1 rem 2 rem;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    flex: 1;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 2.5rem;
+    &:hover {
+      background-color: #002244;
+    }
+  }
+}
+
+.button__AI {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1 rem 2 rem;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 2.5rem;
+  &:hover {
+    background-color: #002244;
+  }
 }

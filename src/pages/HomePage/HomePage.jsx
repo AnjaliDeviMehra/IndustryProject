@@ -2,7 +2,7 @@ import React from "react";
 import "./Homepage.scss";
 import Spotlight from "../../components/Spotlight1/Spotlight";
 import HomepageNav from "../../components/HomepageNav/HomepageNav";
-
+import CommentSummarizerPage from "../CommentSummarizer/CommentSummarizerPage";
 export const HomePage = () => {
   return (
     <>
@@ -19,6 +19,7 @@ export const HomePage = () => {
     <div className="home_wrapper">
       <HomepageNav />
       <Spotlight />
+      <CommentSummarizerPage />
     </div>
     </>
   );

@@ -1,57 +1,48 @@
 import React, { useState } from "react";
-import "./Demo.scss";
+import "./Demo.scss"; // Ensure you have appropriate styles for keyword highlighting
 
 const initialComments = [
-  {
-    text: "The fabric is so soft and comfortable. It feels like it's made with high-quality materials.",
-    user: "Jane Doe",
-    date: "2024-08-01",
-  },
-  {
-    text: "I love the color selection. There are so many vibrant options!",
-    user: "John Smith",
-    date: "2024-08-02",
-  },
-  {
-    text: "The sizing is a bit off. I had to exchange for a different size.",
-    user: "Alice Brown",
-    date: "2024-08-03",
-  },
-  {
-    text: "The stitching on the seams is very well done, but the buttons feel a bit loose.",
-    user: "David Wilson",
-    date: "2024-08-04",
-  },
-  // {
-  //   text: "The design is trendy and stylish. I've received so many compliments!",
-  //   user: "Megan Taylor",
-  //   date: "2024-08-05",
-  // },
-  // {
-  //   text: "I wish the material was more durable. It started to show wear after a few washes.",
-  //   user: "Chris Johnson",
-  //   date: "2024-08-06",
-  // },
-  // {
-  //   text: "The price is reasonable for the quality, but I would love to see more discounts.",
-  //   user: "Emily Davis",
-  //   date: "2024-08-07",
-  // },
+  "I highly recommend this store. Their customer service is excellent. The product quality consistently exceeds my expectations.",
+  "The store was clean and well-organized.",
+  "The fabric is so soft and comfortable. It feels like it's made with high-quality materials.",
+  "The staff was rude during my visit, and the checkout process was slow.",
+  "The price is reasonable for the quality, but I would love to see more discounts.",
+  "The store location is convenient, but I wish they had a wider variety of products.",
+  "The layout could be more intuitive.",
+  "The sizing is a bit off. I had to exchange for a different size.",
 ];
 
 const initialSummary = {
-  summary: (
+  total: (
     <p>
-      Customers appreciate the <span className="keyword">soft</span> and{" "}
-      <span className="keyword">comfortable fabric</span>,{" "}
-      <span className="keyword">vibrant color options</span>, and{" "}
-      <span className="keyword">trendy design</span> of the clothing. The{" "}
-      <span className="keyword">stitching</span> is generally praised, though
-      there are some concerns about the{" "}
-      <span className="keyword">durability of materials</span> and the{" "}
-      <span className="keyword">accuracy of sizing</span>. Overall, the product
-      is seen as <span className="keyword">stylish</span> and{" "}
-      <span className="keyword">reasonably priced</span>.
+      Overall, the store receives positive reviews for{" "}
+      <span className="keyword">excellent customer service</span>,{" "}
+      <span className="keyword">high-quality products</span>, and a{" "}
+      <span className="keyword">clean, well-organized environment</span>.
+      However, some customers noted{" "}
+      <span className="keyword">staff rudeness</span>,{" "}
+      <span className="keyword">slow checkout</span>,{" "}
+      <span className="keyword">high prices</span>,{" "}
+      <span className="keyword">limited variety</span>, and a{" "}
+      <span className="keyword">non-intuitive layout</span>.
+    </p>
+  ),
+  positive: (
+    <p>
+      Customers highly recommend this store due to{" "}
+      <span className="keyword">excellent customer service</span>,{" "}
+      <span className="keyword">high-quality products</span>, and a{" "}
+      <span className="keyword">clean, well-organized environment</span>.
+    </p>
+  ),
+  negative: (
+    <p>
+      Some customers expressed concerns about{" "}
+      <span className="keyword">staff rudeness</span>,{" "}
+      <span className="keyword">slow checkout</span>,{" "}
+      <span className="keyword">high prices</span>,{" "}
+      <span className="keyword">limited product variety</span>, and a{" "}
+      <span className="keyword">non-intuitive store layout</span>.
     </p>
   ),
 };
@@ -59,6 +50,7 @@ const initialSummary = {
 export const Demo = () => {
   const [comments, setComments] = useState(initialComments);
   const [summary, setSummary] = useState(null);
+  const [activeSummary, setActiveSummary] = useState("total");
 
   const handleSummarize = () => {
     setSummary(initialSummary);
@@ -66,38 +58,67 @@ export const Demo = () => {
 
   return (
     <div className="container">
-      <h2 className="comments__header">TRY IT OUT YOURSELF</h2>
+      <h2 className="comments__header">Customer Feedback</h2>
       <div className="content-row">
         <div className="comments">
+          <h2>Comments</h2>
           <div>
             {comments.map((comment, index) => (
               <div key={index} className="comment">
-                <div className="comment__body">
-                  <h4 className="comment__user">{comment.user}</h4>
-                  <p className="comment__text">{comment.text}</p>
-                  <p className="comment__date">{comment.date}</p>
-                </div>
+                <p>{comment}</p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="summary">
-          <h2 className="summary__header">Feedback Summary</h2>
+          <h2>Summary</h2>
           {summary ? (
-            <div>{summary.summary}</div>
+            <div>
+              <div className="summary__types">
+                <button
+                  className="summary__button"
+                  onClick={() => setActiveSummary("total")}
+                >
+                  Total Summary
+                </button>
+                <button
+                  className="summary__button"
+                  onClick={() => setActiveSummary("positive")}
+                >
+                  Positive Summary
+                </button>
+                <button
+                  className="summary__button"
+                  onClick={() => setActiveSummary("negative")}
+                >
+                  Negative Summary
+                </button>
+              </div>
+              <div style={{ marginTop: "0.625rem" }}>
+                {summary[activeSummary]}
+              </div>
+            </div>
           ) : (
-            <p>Click "SUMMARIZE" to see the summary of customer feedback.</p>
+            <p>Click "Summarize" to see the summary of comments.</p>
           )}
           <div className="comment-button__container">
             {!summary && (
               <button className="button__Summarize" onClick={handleSummarize}>
-                SUMMARIZE
+                Summarize
               </button>
             )}
           </div>
         </div>
       </div>
+
+      <a
+        href="https://www.microsoft.com/en-us/microsoft-viva/glint"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="button__AI">How to Build with AI</button>
+      </a>
     </div>
   );
 };
