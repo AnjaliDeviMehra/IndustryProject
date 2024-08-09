@@ -40,8 +40,13 @@ export const AITools = () => {
 
   return <div>
     <section className="ai-tools">
-      <h2 className="ai-tools__title">Build Retail AI Tools</h2>
-      <p className="ai-tools__info">Explore how to build the skills needed to accelerate AI implementation at scale.</p>
+      <div className="hero">
+        <div className="hero__details">
+          <h2 className="hero__title">Build Retail AI Tools</h2>
+          <p className="hero__info">Retail AI Tools leverage artificial intelligence to transform retail operations. They offer predictive analytics for inventory, personalized recommendations, and smart chatbots, optimizing supply chain management and enhancing customer experiences. Explore how to build the skills needed to accelerate AI implementation at scale.</p>
+        </div>
+      </div>
+
       <ul className="card__list">
         {
           cardList.map((card) =>
