@@ -1,10 +1,37 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
 
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+.comment-hero__card {
+  background-color: #e6f2ff;
+  color: #003366;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 30%;
+  max-height: 32rem;
+  margin-right: 6%;
 
+  h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+  }
+
+  h4 {
+    font-weight: 200;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+}
 .hero-section {
   // background-color: #043987;
   background-color: black;

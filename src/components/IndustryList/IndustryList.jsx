@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../../public/assets/smallLogo.png";
+
 import image from "../../../public/assets/industryHero.png";
 import "./IndustryList.scss";
 
@@ -47,7 +48,7 @@ export const IndustryList = () => {
       <section className="hero-section hero">
         <div className="hero-section__section1">
           <span className="hero__subtitle">MICROSOFT LEARN</span>
-          <h1 className="hero__title">
+          <h1 className="hero__title hero__subtitle">
             Explore AI Tools By Industry
           </h1>
           <p className="hero-section__description">
