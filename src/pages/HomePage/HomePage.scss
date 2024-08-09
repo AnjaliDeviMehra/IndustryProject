@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+.hero {
+  background-image: url("../../../src/assets/images/header-background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+  padding: 0 24px;
+}
+
+.navigation-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 4rem;
+  justify-content: center;
+
+  :hover {
+    text-decoration: underline;
+    background-color: #f9f9f9;
+  }
+
+  &__item {
+    all: unset;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 18px;
+    margin-right: 3px;
+  }
+}
+
+.spotlight {
+  background-image: url("../../../src/assets/images/section-bg.jpg");
+  padding: 36px 24px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__icon {
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25%;
+    margin-right: 40px;
+  }
+}
