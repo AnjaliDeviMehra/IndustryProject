@@ -102,7 +102,9 @@ export const HomePage = () => {
       </div>
 
       <div className="spotlight">
-        <h1>Spotlight selections: discover our top picks</h1>
+        <h1 className="spotlight__title">
+          Spotlight selections: discover our top picks
+        </h1>
         <div className="spotlight__wrapper">
           <div className="spotlight__card">
             <div>
