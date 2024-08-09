@@ -1,12 +1,11 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
 body {
   margin: 0;
 }
-
-a {
-  text-decoration: none;
-  color: inherit;
+.home_wrapper {
+  padding: $padding;
 }
-
 .hero {
   background-image: url("../../../src/assets/images/header-background.png");
   background-size: cover;
@@ -14,6 +13,14 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  color: white;
-  padding: 0 24px;
+  color: $white;
+  padding: $padding;
+  &__title{
+    padding-bottom: $padding*2;
+  }
+  &__subtitle{
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 300;
+  }
 }

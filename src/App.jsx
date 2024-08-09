@@ -3,6 +3,8 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { AITools } from "./components/AITools/AITools";
 import { Demo } from "./components/Demo/Demo";
 import { IndustryList } from "./components/IndustryList/IndustryList";
+import "./App.scss";
+
 
 function App() {
   return (

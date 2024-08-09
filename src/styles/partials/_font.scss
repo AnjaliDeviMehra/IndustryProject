@@ -1,0 +1,43 @@
+@use "./variables" as *;
+@mixin font($size, $height, $weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+h1 {
+    @include font(54px, inital, 400);
+    letter-spacing: 2px;
+    color: $white !important;
+}
+h2 {
+    @include font(34px, inital, 600);
+}
+h3 {
+    @include font(20px, inital, 600);
+}
+h4 {
+    @include font(18px, inital, 500); 
+}
+p {
+    @include font(18px, inital, 300);
+}
+a {
+    @include font(16px, inital, 400);
+    color: $indigo !important; 
+    &:link{
+        color: $indigo !important; 
+    }
+    &:visited {
+        color: #624991 !important;
+    }
+    &:hover {}
+    &:active {}
+    
+}
+ul,
+li,
+span,
+label {
+    @include font(18px, inital, 400);
+}
