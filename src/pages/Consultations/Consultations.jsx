@@ -1,4 +1,5 @@
 import "./Consultations.scss";
+import Button from "../../components/Button/Button";
 
 const Consultations = () => {
   return (
@@ -11,23 +12,23 @@ const Consultations = () => {
             alt=""
           />
 
-          <p>
+          <p className="consultation-hero__info">
             Ready to take your business to the next level? Our expert
             consultants are here to help you navigate your industry’s challenges
             and explore new opportunities with cutting-edge AI solutions.
           </p>
-          <p>
+          <p className="consultation-hero__info">
             Whether you're looking to enhance automation, dive into data
             analysis, or explore innovative AI technologies, our tailored
             consultations are designed to meet your unique needs.
           </p>
-          <p>
+          <p className="consultation-hero__info">
             Schedule your consultation now and get personalized insights that
             will drive your business forward.
           </p>
         </div>
         <form id="consultation-form" className="form">
-          <h1 className="form__title">Book Your Consultation Today</h1>
+          <p className="form__title">Book Your Consultation Today</p>
           <label htmlFor="companyName">Company Name:</label>
           <input type="text" id="companyName" name="companyName" required />
 
@@ -88,8 +89,8 @@ const Consultations = () => {
             name="additionalNotes"
             rows="4"
           ></textarea>
-
-          <button type="submit">Submit</button>
+          <Button type="submit" text="Submit" className="form__button" onClick={() => console.log("clicked")} />
+          {/* <button type="submit">Submit</button> */}
         </form>
       </div>
     </>
