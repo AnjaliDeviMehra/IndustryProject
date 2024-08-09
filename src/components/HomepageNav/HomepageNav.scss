@@ -12,22 +12,25 @@
     background-color: $white;
   }
 
+  &__text {
+    font-weight: 600;
+  }
+
   &__item {
     all: unset;
     padding: 0.5rem;
     display: flex;
     align-items: center;
-    &:link{
-      color: $black !important; 
+    &:link {
+      color: $black !important;
     }
     &:visited {
-        color: $black !important;
+      color: $black !important;
     }
   }
 
   &__icon {
     height: 1.25rem;
-    margin-right: .1875rem;
-    
+    margin-right: 0.1875rem;
   }
 }
