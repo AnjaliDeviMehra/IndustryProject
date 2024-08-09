@@ -9,8 +9,8 @@ const Footer = () => {
               <span>☀ Theme ▼</span>
           </div>
           <div className="footer__right">
-              <span>Manage cookies</span>
-              <span>Previous Versions</span>
+              <span><a href="#">Manage cookies</a></span>
+              <span><a href="#">Previous Versions</a></span>
               <span><a href="#">Blog</a></span>
               <span><a href="#">Contribute</a></span>
               <span><a href="#">Privacy</a></span>

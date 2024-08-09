@@ -9,24 +9,25 @@ const Nav = () => {
                     <img src={logo} alt="Logo" />
                 </div>
                 <div className="navbar__title">Learn</div>
+
                     <div className="navbar__links">
-                        <div className="navbar__item">
-                            <span>Discover</span>
+                        <a className="navbar__link">
+                            <span className="navbar__link--text">Discover</span>
                             <i className="arrow-down"></i>
-                        </div>
-                        <div className="navbar__item">
-                            <span>Product documentation</span>
+                        </a>
+                        <a className="navbar__link">
+                            <span className="navbar__link--text">Product documentation</span>
                             <i className="arrow-down"></i>
-                        </div>
-                        <div className="navbar__item">
-                            <span>Development languages</span>
+                        </a>
+                        <a className="navbar__link">
+                            <span className="navbar__link--text">Development languages</span>
                             <i className="arrow-down"></i>
-                        </div>
-                        <div className="navbar__item">
-                            <span>Topics</span>
+                        </a>
+                        <a className="navbar__link">
+                            <span className="navbar__link--text">Topics</span>
                             <i className="arrow-down"></i>
-                        </div>
-                </div>
+                        </a>
+                    </div>
             </div>
             <div className="navbar__right">
                 <i className="search-icon"></i>

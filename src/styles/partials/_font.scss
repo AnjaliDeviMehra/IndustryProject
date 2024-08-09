@@ -8,7 +8,7 @@
 h1 {
     @include font(54px, inital, 400);
     letter-spacing: 2px;
-    color: $white !important;
+    color: $white;
 }
 h2 {
     @include font(34px, inital, 600);
@@ -24,15 +24,15 @@ p {
 }
 a {
     @include font(16px, inital, 400);
-    color: $indigo !important; 
+    color: $indigo; 
     &:link{
-        color: $indigo !important; 
+        color: $indigo; 
     }
-    &:visited {
-        color: #624991 !important;
-    }
-    &:hover {}
-    &:active {}
+    // &:visited {
+    //     color: #624991 !important;
+    // }
+    // &:hover {}
+    // &:active {}
     
 }
 ul,
