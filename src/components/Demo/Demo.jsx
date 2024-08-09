@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Demo.scss"; // Ensure you have appropriate styles for keyword highlighting
 
 const initialComments = [
@@ -112,13 +113,11 @@ export const Demo = () => {
         </div>
       </div>
 
-      <a
-        href="https://www.microsoft.com/en-us/microsoft-viva/glint"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button className="button__AI">How to Build with AI</button>
-      </a>
+      <Link to="/consultations">
+        <button className="button__AI">
+          Book a consultation with our AI experts.
+        </button>
+      </Link>
     </div>
   );
 };
