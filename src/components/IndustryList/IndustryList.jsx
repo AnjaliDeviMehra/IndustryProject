@@ -73,7 +73,7 @@ export const IndustryList = () => {
           {/* <div className="hero-section__section2">
             {/* <img src={image} alt="graphics" className="hero-section__image" /> */}
           {/* </div> */}
-        </section> */}
+        </section>
 
         <section className="info-section comment-hero__card">
           <h2 className="info-section__heading">Items in this collection</h2>
