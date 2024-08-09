@@ -1,0 +1,26 @@
+.consultation {
+  display: flex;
+}
+
+.consultation-hero {
+  background-color: darkblue;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+.consultation-hero__image {
+  width: 60%;
+  padding: 24px;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.form__title {
+  color: black;
+  text-align: center;
+}/*# sourceMappingURL=Consultations.css.map */

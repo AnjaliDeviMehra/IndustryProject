@@ -7,8 +7,7 @@ import CommentSummarizerPage from "./pages/CommentSummarizer/CommentSummarizerPa
 import "./App.scss";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
-
-
+import Consultations from "./pages/Consultations/Consultations";
 
 function App() {
   return (
@@ -20,6 +19,7 @@ function App() {
           <Route path="/industry" element={<IndustryList />} />
           <Route path="/tools" element={<AITools />} />
           <Route path="/demo" element={<CommentSummarizerPage />} />
+          <Route path="/consultations" element={<Consultations />} />
         </Routes>
       </BrowserRouter>
       <Footer />
