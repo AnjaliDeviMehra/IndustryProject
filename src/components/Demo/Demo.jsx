@@ -89,7 +89,7 @@ export const Demo = () => {
           ) : (
             <p>Click "SUMMARIZE" to see the summary of customer feedback.</p>
           )}
-          <div className="button__container">
+          <div className="comment-button__container">
             {!summary && (
               <button className="button__Summarize" onClick={handleSummarize}>
                 SUMMARIZE

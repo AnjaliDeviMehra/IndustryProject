@@ -80,6 +80,7 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      width: 50%;
       align-self: center; /* Center the button between the cards */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -90,7 +91,7 @@
   }
 }
 
-.button__container {
+.comment-button__container {
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
