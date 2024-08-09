@@ -1,9 +1,13 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
 .spotlight {
   background-image: url("../../../src/assets/images/section-bg.jpg");
-  padding: 36px 24px;
+  padding: 48px 24px;
+  margin-top: 60px;
 
   &__title {
     text-align: center;
+    padding-bottom: 48px;
   }
 
   &__description {
@@ -15,7 +19,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 12px;
+    gap: $gap;
   }
 
   &__icon {
@@ -24,10 +28,7 @@
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 32%;
+    padding: $padding;
   }
 
   &__link {
@@ -38,5 +39,16 @@
       color: #0065b3;
       text-decoration: underline;
     }
+  }
+  &__subtitle {
+    padding-left: 12px;
+      &--2 {
+        font-weight: 500;
+        display: flex;
+        padding-top: 6px;
+      }
+    }
+  &__content {
+    padding: 12px 0 24px 0;
   }
 }

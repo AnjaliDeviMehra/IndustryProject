@@ -4,11 +4,17 @@ import { AITools } from "./components/AITools/AITools";
 import { Demo } from "./components/Demo/Demo";
 import { IndustryList } from "./components/IndustryList/IndustryList";
 import CommentSummarizerPage from "./pages/CommentSummarizer/CommentSummarizerPage";
+import "./App.scss";
+import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
+
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/industry" element={<IndustryList />} />
@@ -16,6 +22,7 @@ function App() {
           <Route path="/demo" element={<CommentSummarizerPage />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }
